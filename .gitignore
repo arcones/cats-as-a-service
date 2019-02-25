@@ -1,0 +1,7 @@
+.gradle
+.idea
+out
+build
+target
+*.iml
+/src/main/resources/cats.db

@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.zooplus'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.7.2'
+    compile 'org.xerial:sqlite-jdbc:3.25.2'
+    compile 'com.google.code.gson:gson:2.8.5'
+
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+}
+
+task run(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "com.zooplus.cats.Main"
+}
