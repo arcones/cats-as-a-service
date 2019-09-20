@@ -1,6 +1,17 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        dependencies {
+            classpath 'com.github.jengelman.gradle.plugins:shadow:5.0.0'
+        }
+    }
+}
+
 plugins {
     id 'java'
 }
+
+apply plugin: 'com.github.johnrengelman.shadow'
 
 group 'com.zooplus'
 version '1.0'
